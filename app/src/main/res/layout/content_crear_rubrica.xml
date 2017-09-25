@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loCrearRubrica"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.blartenix.proyecto_as_pm.CrearRubricaActivity"
+    tools:showIn="@layout/activity_crear_rubrica">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCodigoRubrica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Código"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etNombreRubrica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:ems="10"
+            android:hint="NOMBRE DE LA RUBRICA"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_weight="11"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/loVCategorias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- lllllllllllllllllllllllll<LinearLayout
+                    android:id="@+id/loVCategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/loHCabezaraCatg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Categoria #"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+ Elemento" />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loHBasicInfoCatg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etNombreCategoria"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Nombre Categoria"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/etPesoCategoria"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:hint="Peso"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/loVElementos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/loVElemento"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Elemento #"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                            <LinearLayout
+                                android:id="@+id/loHBasicInfoElem"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/editText2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:hint="Nombre Elemento"
+                                    android:inputType="textPersonName" />
+
+                                <EditText
+                                    android:id="@+id/editText6"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.4"
+                                    android:hint="Peso"
+                                    android:inputType="textPersonName" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/etL1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="L1"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/etL2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="L2"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/etL3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="L3"
+                                android:inputType="textPersonName" />
+
+                            <EditText
+                                android:id="@+id/etL4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="L4"
+                                android:inputType="textPersonName" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout> lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll-->
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bAgregarCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Agregar Categoria"
+            android:onClick="onAgregarCategoriaClick"/>
+    </LinearLayout>
+
+</LinearLayout>
